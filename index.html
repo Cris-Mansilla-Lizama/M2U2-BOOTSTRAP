@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conociendo Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <!-- <div class="container-fluid" style="background-color: chocolate;">Contenedor fluido</div> -->
+  <div class="container" style="background-color: yellowgreen;">
+    <h3>El Taller de Cris</h3>
+    <div class="container">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              <strong>¿Quiénes somos?</strong>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              El Taller de Cris es una empresa familiar dedicada a la creación de productos de madera
+              hechas a medida, para que cada uno de los elementos que salen de nuestras manos, formen parte del hogar de
+              nuestros clientes.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <strong>Compromiso con el medio ambiente</strong>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <!-- <strong> -->Nuestros productos están creados principalmente con madera reciclada, obtenidas de
+              edificaciones
+              antiguas o de otros muebles en desuso que ya han cumplido su ciclo y que sin embargo están aptas para
+              ser reutilizados. Así como también de maderas recolectadas directamente del suelo en los bosques de la
+              Patagonia Argentina.
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="row mt-3" style="color: aliceblue;">
+
+          </div>
+    <div class="row" style="color: aliceblue;">
+      <div class="col" style="background-color: burlywood;">
+        Nuestros productos están hechos con maderas de Pino, Álamo, Coigüe, entre otras especies nativas.
+      </div>
+
+      <div class="row">
+        <div class="col-5">
+
+          <div id="carouselExample" class="carousel slide mt-3">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/img_bst (1).jpg"  class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/img_bst (2).jpg"  class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/img_bst (3).jpg"  class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/img btsp (1).jpeg"  class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/img btsp (2).jpeg"  class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/img btsp (3).jpeg"  class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/img btsp (4).jpeg"  class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        </div>
+
+
+        <div class="col-7 mt-3" style="background-color: rgb(200, 227, 240); color: black;">
+          <h3>Lista de precios y productos</h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Producto</th>
+                <th scope="col">Tamaño</th>
+                <th scope="col">Precio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Lámpara Frame</td>
+                <td>23x23 (cms)</td>
+                <td>25.000</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Mesa de Luz</td>
+                <td>48x32x25 (cms)</td>
+                <td>35.000</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Camión de álamo y pino</td>
+                <td>45x35x25 (cms)</td>
+                <td>42.000</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Casa de Pájaros</td>
+                <td>20x30x25 (cms)</td>
+                <td>25.000</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Cama de perritos</td>
+                <td>70x70x25 (cms)</td>
+                <td>40.000</td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>Casa de perritos</td>
+                <td>100x100x135 (cms)</td>
+                <td>88.000</td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>Camastro</td>
+                <td>180x70x30 (cms)</td>
+                <td>65.000</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
